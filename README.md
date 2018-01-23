@@ -166,4 +166,125 @@ Allow the user (marked by G in the example) to move either up, down, left, or ri
 ★★ Add enemies that move randomly in any direction once per turn. (enemies just like traps cause the player to lose if touched)
 
 HINT: Don't let the player move off the gameboard! You program will crash if they move off the top or bottom of the board!
-(the same holds true for enemies) 
+(the same holds true for enemies)
+
+
+__________________________________________________________________________________________________________________________________________________________________
+
+
+Fun with Functions
+
+Requires:
+variables, data types, and numerical operators
+basic input/output
+logic (if statements, switch statements)
+loops (for, while, do-while)
+functions
+
+Write a function titled say_hello() that outputs to the screen "Hello"
+
+★ Modify the function so that it takes an integer argument and says hello a number of times equal to the value passed to it.
+
+★★ Make another function that takes two integers arguments and then returns an integer that is the product of the two integers.
+(i.e., integer1: 4, Integer2: 5 returns: 20)
+
+★★★ Make a function called half() that takes an integer argument. The function must print the number it received to the screen, then the program should divide that number by two to make a new number. If the new number is greater than zero the function then calls the function half() passing it the new number as its argument. If the number is zero or less than the function exits
+
+Call the function half() with an argument of 100, the screen output should be
+100
+50
+25
+...
+...
+1.
+
+
+__________________________________________________________________________________________________________________________________________________________________
+Strings are your friends, until they betray you.
+Requires:
+variables, data types, and numerical operators
+basic input/output
+logic (if statements, switch statements)
+loops (for, while, do-while)
+functions
+strings & string functions
+
+
+Write a program that asks for a user first name and last name separately.
+The program must then store the users full name inside a single string and out put it to the string.
+i.e.
+Input:
+John
+Smith
+Output:
+John Smith
+
+★ Modify the program so that it then replaces every a, e, i , o, u w/ the letter z.
+i.e.
+John Smith -> Jzhn Smzth
+
+★★ Modify the Program so that it reverses the users name
+i.e.
+John Smith -> htimS nhoJ
+
+
+_________________________________________________________________________________
+Graduation:
+Requires:
+variables, data types, and numerical operators
+basic input/output
+logic (if statements, switch statements)
+loops (for, while, do-while)
+arrays
+pseudo random number generation
+strings & string functions
+functions
+structures/classes
+enumerated data
+file input/output
+pointers
+sorting
+linked lists
+advanced classes
+
+Write a program that creates a linked list of bunny objects.
+Each bunny object must have
+Sex: Male, Female (random at creation 50/50)
+color: white, brown, black, spotted
+age : 0-10 (years old)
+Name : randomly chosen at creation from a list of bunny names.
+radioactive_mutant_vampire_bunny: true/false (decided at time of bunny creation 2% chance of true)
+
+At program initialization 5 bunnies must be created and given random colors.
+Each turn afterwards the bunnies age 1 year.
+So long as there is at least one male age 2 or older, for each female bunny in the list age 2 or older;
+a new bunny is created each turn. (i.e. if there was 1 adult male and 3 adult female bunnies, three new bunnies would be born each turn)
+New bunnies born should be the same color as their mother.
+If a bunny becomes older than 10 years old, it dies.
+If a radioactive mutant vampire bunny is born then each turn it will change exactly one non radioactive bunny into a radioactive vampire bunny.
+(if there are two radioactive mutant vampire bunnies two bunnies will be changed each turn and so on...)
+Radioactive vampire bunnies are excluded from regular breeding and do not count as adult bunnies.
+Radioactive vampire bunnies do not die until they reach age 50.
+The program should print a list of all the bunnies in the colony each turn along w/ all the bunnies details, sorted by age.
+The program should also output each turns events such as
+"Bunny Thumper was born!
+Bunny Fufu was born!
+Radioactive Mutant Vampire Bunny Darth Maul was born!
+Bunny Julius Caesar died!
+The program should write all screen output to a file.
+When all the bunnies have died the program terminates.
+If the bunny population exceeds 1000 a food shortage must occur killing exactly half of the bunnies (randomly chosen)
+
+★ Modify the program to run in real time, with each turn lasting 2 seconds, and a one second pause between each announement.
+
+★★ Allow the user to hit the 'k' key to initiate a mass rabit cull! which causes half of all the rabits to be killed (randomly chosen).
+
+★★★★ Modify the program to place the rabits in an 80x80 grid. Have the rabits move one space each turn randomly.
+Mark juvenile males with m, adult males w/ M,
+juvenile females w/ f, adult femails w/ F
+radioactive mutant vampire bunnies with X
+
+Modify the program so that radioactive mutant vampire bunnies only convert bunnies that end a turn on an adjacent square.
+Modify the program so that new babies are born in an empty random adjacent square next to the mother bunny. (if no empty square exits then the baby bunny isn't born)
+
+★★★★★ Modify the program so that it saves each turn to a file and can play back at accelearted speed all subsequent turns.  
